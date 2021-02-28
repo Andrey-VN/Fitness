@@ -14,6 +14,7 @@ namespace Fitness.BL.Controller
     /// </summary>
     public class UserController : ControllerBase
     {
+        public bool IsNewUser { get; } 
         private const string USERS_FILE_NAME = "users.dat";
         /// <summary>
         /// Список пользователей приложения.
@@ -23,7 +24,7 @@ namespace Fitness.BL.Controller
         /// Пользователь приложения.
         /// </summary>
         public User CurrentUser { get; }
-        public bool IsNewUser { get; } = false;
+        
 
         /// <summary>
         /// Создание нового пользователя.

@@ -32,7 +32,7 @@ namespace Fitness.BL.Controller
                 }
                 else
                 {
-                    return default;
+                    return default(T);
                 }
             }
         }
